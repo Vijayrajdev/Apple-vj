@@ -1,11 +1,16 @@
 import { Tab } from "@headlessui/react";
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
+import { fetchCategories } from "../utils/fetchCategories";
 
-const Home: NextPage = () => {
+interface Props {
+  categories: Category[];
+}
+
+const Home = ({ categories }: Props) => {
   return (
     <div className="">
       <Head>
@@ -29,7 +34,7 @@ const Home: NextPage = () => {
 
           <Tab.Group>
             <Tab.List className="flex justify-center">
-              {/* {categories.map((category) => (
+              {categories.map((category) => (
                 <Tab
                   key={category._id}
                   id={category._id}
@@ -43,7 +48,7 @@ const Home: NextPage = () => {
                 >
                   {category.title}
                 </Tab>
-              ))} */}
+              ))}
             </Tab.List>
             <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4">
               {/* <Tab.Panel className="tabPanel">{showProducts(0)}</Tab.Panel>
@@ -59,3 +64,15 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+// Backend Code - SSR
+
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
+  const categories = await fetchCategories();
+
+  return {
+    props: {
+      categories,
+    },
+  };
+};
