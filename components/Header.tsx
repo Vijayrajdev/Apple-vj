@@ -28,7 +28,13 @@ const Header = () => {
         <a className="headerLink">Explore</a>
         <a className="headerLink">Support</a>
         <a className="headerLink">Buisness</a>
-        <a className="headerLink">Contact</a>
+        <a
+          href="https://vijayraj.netlify.app/"
+          target="_blank"
+          className="headerLink"
+        >
+          Contact
+        </a>
       </div>
 
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
