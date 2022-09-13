@@ -11,7 +11,10 @@ const Landing = () => {
             Powered
           </span>
           <span className="block">By Intellect</span>
-          <span className="block">Driven By Values</span>
+          <span className="block space-y-3 md:flex md:space-x-4 md:space-y-0">
+            <span className="block">Driven By</span>
+            <span className="block">Values</span>
+          </span>
         </h1>
 
         <div className="space-x-8">
