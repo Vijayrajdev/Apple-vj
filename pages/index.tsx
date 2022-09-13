@@ -8,6 +8,7 @@ import Product from "../components/Product";
 import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
 
+
 interface Props {
   categories: Category[];
   products: Product[];

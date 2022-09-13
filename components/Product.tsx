@@ -7,6 +7,7 @@ interface Props {
   product: Product;
 }
 const Product = ({ product }: Props) => {
+  const addItemToBasket = () => {};
   return (
     <div className="flex h-fit w-[320px] select-none flex-col space-y-3 rounded-xl bg-[#35383c] p-8 md:h-[500px] md:w-[400px] md:p-10">
       <div className="relative h-64 w-full md:h-72">
@@ -23,7 +24,10 @@ const Product = ({ product }: Props) => {
           <p>₹{product.price}</p>
         </div>
 
-        <div className="textGradient flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full md:h-[70px] md:w-[70px]">
+        <div
+          onClick={addItemToBasket}
+          className="textGradient flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full md:h-[70px] md:w-[70px]"
+        >
           <ShoppingCartIcon className="h-8 w-8 text-white" />
         </div>
       </div>
