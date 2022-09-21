@@ -2,12 +2,12 @@ import { Tab } from "@headlessui/react";
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Basket from "../components/Basket";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import Product from "../components/Product";
 import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
-
 
 interface Props {
   categories: Category[];
@@ -28,12 +28,10 @@ const Home = ({ categories, products }: Props) => {
     <div className="">
       <Head>
         <title>Apple | Vj</title>
-        <link
-          rel="icon"
-          href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png"
-        />
+        <link rel="icon" href="/apple.png" />
       </Head>
       <Header />
+      <Basket />
 
       <main className="relative h-[200vh] bg-[#E7ECEE]">
         <Landing />
