@@ -45,9 +45,11 @@ const Header = () => {
         <Link href={"/checkout"}>
           <div className="relative">
             <ShoppingBagIcon className="headerIcon" />
-            <span className="textGradient absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center rounded-full text-[10px] text-white">
-              {items.length}
-            </span>
+            {items.length > 0 ? (
+              <span className="textGradient absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center rounded-full text-[10px] text-white">
+                {items.length}
+              </span>
+            ) : null}
           </div>
         </Link>
 
