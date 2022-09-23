@@ -71,6 +71,17 @@ const Home = ({ categories, products }: Props) => {
               <Tab.Panel className="tabPanel">{showProducts(3)}</Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
+
+          <div className="flex items-center justify-center">
+            <h1 className="text-xl text-white md:text-2xl">
+              Made with ❤️ by{" "}
+              <span className="textGradient bg-clip-text text-xl font-semibold text-transparent">
+                <a target={"_blank"} href="https://vijayraj.netlify.app">
+                  Vijaydev
+                </a>
+              </span>
+            </h1>
+          </div>
         </div>
       </section>
     </div>
