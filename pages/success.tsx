@@ -7,18 +7,21 @@ import {
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Currency from "react-currency-formatter";
 import { useMediaQuery } from "react-responsive";
 import Button from "../components/Button";
 import { fetchLineItems } from "../utils/fetchLineItems";
+import { useSession } from "next-auth/react";
 
 interface Props {
   products: StripeProduct[];
 }
 
 const success = ({ products }: Props) => {
+  const { data: session } = useSession();
   const router = useRouter();
   const { session_id } = router.query;
   const [mounted, setMounted] = useState(false);
@@ -77,7 +80,7 @@ const success = ({ products }: Props) => {
               </p>
               <h4 className="text-lg">
                 Thank you{" "}
-                {/* {session ? session.user?.name?.split(" ")[0] : "Guest"} */}
+                {session ? session.user?.name?.split(" ")[0] : "Guest"}
               </h4>
             </div>
           </div>
