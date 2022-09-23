@@ -1,27 +1,21 @@
-# Next.js + Tailwind CSS Example
+# Apple Redesign 📈💥
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is the redesign of apple website with awesome fully responsive UI. <br><br>
+[![forthebadge Made with JavaScript](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://www.javascript.com/)
+![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
+<br>
+![made-with-HTML](https://img.shields.io/badge/HTML-5.0-ff5230?style=for-the-badge&logo=HTML5)
+![ForTheBadge built-with-React](https://camo.githubusercontent.com/4e4a3b5c3e9c00501ec866e2f2466c5a6032f838aca5f2cf3b14450e39e8a2f0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742532302d2532333230323332612e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d253233363144414642)<br>
 
-## Deploy your own
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Preview
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+| 1. Go to our app Chart Gen                                           | ![Image not found](/Readme_images/img1.png)          |
+| ---------------------------------------------------------------------- | -------------------------------------------------------- |
+| 2. Click on `Get Started` and voila! your Modal popup appear.          | ![Image not found](Readme_images/img2.png)          |
+| 3. Enter Your `Name and Chart type` you want. | ![Image not found](/Readme_images/img3.png)     |
+| 4. Click on `Dive in` and voila! your chart appears.         | ![Image not found](/Readme_images/img4.png) |
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Thanks for Reading!
